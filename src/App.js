@@ -1,7 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  fetch("http://34.69.177.221:3000")
+    .then((res) => res.json())
+    .then((data) => console.log(data));
+  console.log("test");
+
   return (
     <div className="App">
       <header className="App-header">
